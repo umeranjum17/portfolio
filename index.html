@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(window).on('scroll', function () {
+                                // console.log($(window).height());
+                                scroll_pos = $(window).scrollTop() + $(window).height();
+                                element_pos = $('.progress-bar').first().offset().top + $('.progress-bar').first().height();
+                                if (scroll_pos > element_pos) {
+                                    $('.progress-bar').addClass('add-anim');
+                                    $('.skill-set').addClass('make-visible');
+                                };
+                            
+                            });</script>
     <link
       href="https://fonts.googleapis.com/css?family=Dosis&display=swap"
       rel="stylesheet"
@@ -35,7 +47,7 @@
       <div class="container">
         <div class="intro">
                         <div class="hero">
-                                        <h1>I <span class=primary>'<span>am</h1>
+                                        <h1>I <span class=primary>'</span>am</h1>
                                         <h1 class="move-right">Umer</h1>
                                         <h1 class="primary move-left">Farooq</h1>
                                         <h3></h3>
@@ -46,37 +58,37 @@
                         <p class="lead-l">Skills</p>
                         <div class="skills">
                                 <div class="name">Django</div>
-                                <div class="progress-bar"></div>
+                                <div class="progress-bar" style="width:70%"></div>
                                 <div class="percentage">80%</div>    
                         </div>
                         <div class="skills">
-                                        <div class="name">Django</div>
-                                        <div class="progress-bar"></div>
+                                        <div class="name">Python</div>
+                                        <div class="progress-bar"  style="width:70%"></div>
                                         <div class="percentage">80%</div>    
                                 </div>
                                 <div class="skills">
-                                                <div class="name">Django</div>
-                                                <div class="progress-bar"></div>
-                                                <div class="percentage">80%</div>    
+                                                <div class="name">Node.js</div>
+                                                <div class="progress-bar"  style="width:63%"></div>
+                                                <div class="percentage">75%</div>    
                                         </div>
                                         <div class="skills">
-                                                        <div class="name">Django</div>
-                                                        <div class="progress-bar"></div>
-                                                        <div class="percentage">80%</div>    
+                                                        <div class="name">Java</div>
+                                                        <div class="progress-bar" style="width:57%"></div>
+                                                        <div class="percentage">70%</div>    
                                                 </div>
                                                 <div class="skills">
-                                                                <div class="name">Django</div>
-                                                                <div class="progress-bar"></div>
-                                                                <div class="percentage">80%</div>    
+                                                                <div class="name">C/C++</div>
+                                                                <div class="progress-bar" style="width:74%"></div>
+                                                                <div class="percentage">86%</div>    
                                                         </div>
                                                         <div class="skills">
-                                                                        <div class="name">Django</div>
-                                                                        <div class="progress-bar"></div>
-                                                                        <div class="percentage">80%</div>    
+                                                                        <div class="name">HTML/CSS</div>
+                                                                        <div class="progress-bar"style="width:63%"></div>
+                                                                        <div class="percentage">75%</div>    
                                                                 </div>
                                                                 <div class="skills">
-                                                                                <div class="name">Django</div>
-                                                                                <div class="progress-bar"></div>
+                                                                                <div class="name">Cloud Technologies</div>
+                                                                                <div class="progress-bar"style="width:70%"></div>
                                                                                 <div class="percentage">80%</div>    
                                                                         </div>
                 </div>
@@ -111,7 +123,7 @@
                         </div>
                 </div>
                 
-        </div>
+       
         <div class="inner-container">
                         <div class="Resume">
                                 <div class="r-details">
