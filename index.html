@@ -2,7 +2,9 @@
 <html>
   <head>
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                
 <script>
+        $("html, body,#Resume").animate({ scrollTop: 0 }, 1000);
 $(window).on('scroll', function () {
                                 // console.log($(window).height());
                                 scroll_pos = $(window).scrollTop() + $(window).height();
@@ -100,7 +102,7 @@ $(window).on('scroll', function () {
             <li id="current">
               <a href="current.html" class="current">HOME</a>
             </li>
-            <li id="work.html"><a href="work.html">WORK</a></li>
+            <li id="work.html"><a href="#Resume">Resume</a></li>
             <li id="about.html"><a href="about.html">ABOUT</a></li>
             <li id="contact.html"><a href="contact.html">CONTACT</a></li>
           </ul>
@@ -180,20 +182,24 @@ $(window).on('scroll', function () {
                         <div class="timeline">
                                         <div class="t-container left">
                                           <div class="content">
-                                            <h2>2017</h2>
-                                            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                                          </div>
+                                            <h2>Lead Software Developer (Alfabolt)</h2>
+                                            <h4>2016-present</h4>
+                                            <p>Technologies used were mainly django ,python but also included javascript,jquery and html and for cloud technologies AWS and Google platform was used .Developed one of their major projects panion a social networking platform available on both google and apple store and widely accepted by the sweden community</p></div>
                                         </div>
                                         <div class="t-container right">
                                           <div class="content">
-                                            <h2>2016</h2>
-                                            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+
+                                            <h2>Web Developer (Turing Lab,Nust)</h2>
+                                            <h4>06/2015 – 09/2015</h4>
+                                            <p>Technologies used were html css and at the very end also worked on angular js Daily database maintenance. Designed, developed and maintained web-based applications. Full stack web developer. Maintaining school websites</p>
                                           </div>
                                         </div>
                                         <div class="t-container left">
                                           <div class="content">
-                                            <h2>2015</h2>
-                                            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                                            <h2>Director Web and IT (AIS,Islamabad)</h2>
+                                            <h4>06/2014 – 06/2015</h4>
+                                            <p>Carry out routine site maintenance. Used object-oriented design principles and test-driven development to build full stack web applications. Work closely with other developers and professionals.
+                                                </p>
                                           </div>
                                         </div>
                                        
@@ -202,13 +208,13 @@ $(window).on('scroll', function () {
                 
        
         <div class="inner-container">
-                        <div class="Resume">
+                        <div class="Resume" id="Resume">
                                 <div class="r-details">
                                                 I'm a Computer scientist who has graduated from National University of Science and Technology in 2019. I am Proficient in many languages which include C/C++ Java Node.js MySQL C# Javascript and along with that I have sound knowledge of MVC frameworks like spring i have as a freelancer and an intern for both Back-end and Front-end Developer. 
                                 
                                        
                         </div>
-                        <div class="btn"onclick="window.location='#';"><a href="#">View Resume</a></div>
+                        <div class="btn"onclick="window.location='https://drive.google.com/open?id=1jICYnFzAItJug9K3EjgCwhcT2arZA440'"><a href="https://drive.google.com/open?id=1jICYnFzAItJug9K3EjgCwhcT2arZA440">View Resume</a></div>
                 </div>
                 
         </div>
@@ -218,8 +224,8 @@ $(window).on('scroll', function () {
                                 <div class="c-details">
                                                 <div class="contact-portion">
                                                         <p class="lead-m">Contact</p>
-                                                        <p class="lead m-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, nam!</p>
-                                                        <p class="lead">Lorem ipsum dolor sit amet.</p>
+                                                        <p class="lead m-2">EMAIL: umeranjum17@gmail.com</p>
+                                                        <p class="lead">PHONE: 0527700396.</p>
                                                 </div>
                                                 <div class="contact-portion-2"> <form action="/action_page.php">
                                                 
@@ -227,7 +233,7 @@ $(window).on('scroll', function () {
                                                         <input type="text" id="email" name="email" placeholder="Email" >
                                                         <input type="text" id="phone" name="phone" placeholder="Phone">
                                                         <textarea id="message" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                                                        <input type="submit" id="submit" value="Submit">
+                                                        <input type="submit" class="btn submit" value="Submit">
                                                 
                                                       </form></div>
                                                 
